@@ -1,0 +1,403 @@
+/* TOP */
+.faction-cosmic-logo{
+    background: url("../../resources/design/logo.svg");
+    background-size: contain;
+    width: 12vh;
+    --ratio: calc(302 / 352);
+    height: calc(12vh * var(--ratio));
+    position: absolute;
+    left: 6vw;
+    top: 4vh;
+}
+.faction-welcome-title{
+    position: absolute;
+    left: 13vw;
+    top: 8vh;
+    width: 85vw;
+}
+.faction-welcome-title-txt{
+    color: #FFFFFF;
+    font-family: 'Orbitron';
+    font-size: 4vh;
+    font-weight: 800;
+    text-shadow: 0.15vh 0.5vh 0.5vh #000000;
+    -webkit-text-stroke-width: 0.15vh;
+    -webkit-text-stroke-color: black;
+}
+
+/* LEFT PANEL */
+.faction-panel-left{
+    position: absolute;
+    right: 52vw;
+    top: 18vh;
+    height: 58vh;
+    --ratio: calc(1664 / 1205);
+    width: calc(58vh * var(--ratio));
+    background: url("../../resources/faction/faction_cosmiccons.png");
+    background-size: contain;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 1.5vh;
+    transition: 400ms;
+}
+.faction-panel-left:hover{
+    right: 51vw;
+    top: 17vh;
+    height: 60vh;
+    width: calc(60vh * var(--ratio));
+    box-shadow: 0px 0px 15px 15px #e134e8;
+}
+.faction-badge-left{
+    background: url("../../resources/faction/BadgeHawk.png");
+    background-size: contain;
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    right: -1vw;
+    bottom: -2vw;
+}
+.faction-text-cosmicons-div{
+    --ratio: calc(1664 / 1205);
+    position: absolute;
+    top: 79vh;
+    right: 52vw;
+    width: calc(58vh * var(--ratio));
+    text-align: center;
+}
+
+/* RIGHT PANEL */
+.faction-panel-right{
+    position: absolute;
+    left: 52vw;
+    top: 18vh;
+    height: 58vh;
+    --ratio: calc(1664 / 1205);
+    width: calc(58vh * var(--ratio));
+    background: url("../../resources/faction/faction_spirats.png");
+    background-size: contain;
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 1.5vh;
+    transition: 400ms;
+}
+.faction-panel-right:hover{
+    left: 51vw;
+    top: 17vh;
+    height: 60vh;
+    width: calc(60vh * var(--ratio));
+    box-shadow: 0px 0px 15px 15px #e134e8;
+}
+.faction-badge-right{
+    background: url("../../resources/faction/ArchBadge.png");
+    background-size: contain;
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    left: -1vw;
+    bottom: -2vw;
+}
+.faction-text-spirats-div{
+    --ratio: calc(1664 / 1205);
+    position: absolute;
+    top: 79vh;
+    left: 52vw;
+    width: calc(58vh * var(--ratio));
+    text-align: center;
+}
+
+/* BOTH */
+.faction-description{
+    color: #FFFFFF;
+    font-family: 'Orbitron';
+    font-size: 1.75vh;
+}
+
+/* BOTTOM */
+.faction-subtitle-div{
+    position: absolute;
+    bottom: 5vh;
+    left: 35vw;
+    width: 30vw;
+    text-align: center;
+    z-index: 3;
+}
+.faction-subtitle{
+    font-size: 1.5vw;
+    font-family: 'Orbitron';
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.faction-dfinity-logo{
+    width: 3vw;
+    --ratio: calc(26 / 55);
+    height: calc(3vw * var(--ratio));
+    background: url("../../resources/design/dfinity.svg");
+    background-size: cover;
+    position: absolute;
+    left: 48.5vw;
+    bottom: 2vh;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++ RESPONSIVE +++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media(min-width: 1440px) and (max-width: 1600px){
+    
+}
+
+@media(min-width: 1024px) and (max-width: 1439px){
+    /* TOP */
+    .faction-cosmic-logo{
+        left: 3vw;
+    }
+    /* LEFT PANEL */
+    .faction-panel-left{
+        width: 46vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(46vw * var(--ratio));
+    }
+    .faction-panel-left:hover{
+        width: 47vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(47vw * var(--ratio));
+        box-shadow: 0px 0px 15px 15px #e134e8;
+    }
+    .faction-text-cosmicons-div{
+        top: 80vh;
+        right: 51vw;
+        width: 48vw;
+    }
+
+    /* RIGHT PANEL */
+    .faction-panel-right{
+        width: 46vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(46vw * var(--ratio));
+    }
+    .faction-panel-right:hover{
+        width: 47vw;
+        height: calc(47vw * var(--ratio));
+        box-shadow: 0px 0px 15px 15px #e134e8;
+    }
+    .faction-text-spirats-div{
+        top: 80vh;
+        left: 51vw;
+        width: 48vw;
+    }
+
+    /* BOTH */
+    .faction-description{
+        font-size: 2.5vh;
+    }
+}
+@media(max-width: 767px){
+    /* TOP */
+    .faction-cosmic-logo{
+        width: 27vw;
+        --ratio: calc(302 / 352);
+        height: calc(27vw * var(--ratio));
+        position: absolute;
+        left: 2vw;
+        top: 3vh;
+    }
+    .faction-welcome-title{
+        position: absolute;
+        left: 30vw;
+        top: 4vh;
+        width: 65vw;
+    }
+    .faction-welcome-title-txt{
+        font-size: 5.25vw;
+    }
+
+    /* LEFT PANEL */
+    .faction-panel-left{
+        right: auto;
+        left: 10vw;
+        top: 57vh;
+        width: 80vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(80vw * var(--ratio));
+    }
+    .faction-panel-left:hover{
+        right: auto;
+        left: 7.5vw;
+        top: 55vh;
+        width: 85vw;
+        height: calc(85vw * var(--ratio));
+    }
+    .faction-badge-left{
+        background: url("../../resources/faction/BadgeHawk.png");
+        background-size: contain;
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        right: -1vw;
+        bottom: -2vw;
+    }
+    .faction-text-cosmicons-div{
+        display: none;
+    }
+
+    /* RIGHT PANEL */
+    .faction-panel-right{
+        right: auto;
+        left: 10vw;
+        top: 20vh;
+        width: 80vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(80vw * var(--ratio));
+    }
+    .faction-panel-right:hover{
+        right: auto;
+        left: 7.5vw;
+        top: 19vh;
+        width: 85vw;
+        height: calc(85vw * var(--ratio));
+    }
+    .faction-badge-right{
+        background: url("../../resources/faction/ArchBadge.png");
+        background-size: contain;
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        left: -1vw;
+        bottom: -2vw;
+    }
+    .faction-text-spirats-div{
+        display: none;
+    }
+
+    /* BOTTOM */
+    .faction-subtitle-div{
+        position: absolute;
+        bottom: 5vh;
+        left: 5vw;
+        width: 90vw;
+        text-align: center;
+        z-index: 3;
+    }
+    .faction-subtitle{
+        font-size: 3vw;
+        font-family: 'Orbitron';
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    .faction-dfinity-logo{
+        width: 10vw;
+        --ratio: calc(26 / 55);
+        height: calc(10vw * var(--ratio));
+        background: url("../../resources/design/dfinity.svg");
+        background-size: cover;
+        position: absolute;
+        left: 45vw;
+        bottom: 2vh;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+    /* TOP */
+    .faction-cosmic-logo{
+        width: 25vw;
+        --ratio: calc(302 / 352);
+        height: calc(25vw * var(--ratio));
+        position: absolute;
+        left: 2vw;
+        top: 3vh;
+    }
+    .faction-welcome-title{
+        position: absolute;
+        left: 30vw;
+        top: 4vh;
+        width: 65vw;
+    }
+    .faction-welcome-title-txt{
+        font-size: 5.25vw;
+    }
+
+    /* LEFT PANEL */
+    .faction-panel-left{
+        right: auto;
+        left: 17.5vw;
+        top: 57vh;
+        width: 65vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(65vw * var(--ratio));
+    }
+    .faction-panel-left:hover{
+        right: auto;
+        left: 15vw;
+        top: 55vh;
+        width: 70vw;
+        height: calc(70vw * var(--ratio));
+    }
+    .faction-badge-left{
+        background: url("../../resources/faction/BadgeHawk.png");
+        background-size: contain;
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        right: -1vw;
+        bottom: -2vw;
+    }
+    .faction-text-cosmicons-div{
+        display: none;
+    }
+
+    /* RIGHT PANEL */
+    .faction-panel-right{
+        right: auto;
+        left: 17.5vw;
+        top: 20vh;
+        width: 65vw;
+        --ratio: calc(1205 / 1664);
+        height: calc(65vw * var(--ratio));
+    }
+    .faction-panel-right:hover{
+        right: auto;
+        left: 15vw;
+        top: 19vh;
+        width: 70vw;
+        height: calc(70vw * var(--ratio));
+    }
+    .faction-badge-right{
+        background: url("../../resources/faction/ArchBadge.png");
+        background-size: contain;
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        left: -1vw;
+        bottom: -2vw;
+    }
+    .faction-text-spirats-div{
+        display: none;
+    }
+
+    /* BOTTOM */
+    .faction-subtitle-div{
+        position: absolute;
+        bottom: 5vh;
+        left: 5vw;
+        width: 90vw;
+        text-align: center;
+        z-index: 3;
+    }
+    .faction-subtitle{
+        font-size: 3vw;
+        font-family: 'Orbitron';
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    .faction-dfinity-logo{
+        width: 8vw;
+        --ratio: calc(26 / 55);
+        height: calc(8vw * var(--ratio));
+        background: url("../../resources/design/dfinity.svg");
+        background-size: cover;
+        position: absolute;
+        left: 45vw;
+        bottom: 2vh;
+    }
+}

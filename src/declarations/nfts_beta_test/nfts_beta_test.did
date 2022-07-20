@@ -1,0 +1,52 @@
+type NFTsBeta = 
+ service {
+   addBetaPlayer: (text, nat) -> (bool);
+   addCodes: (CodesList) -> (bool);
+   assignCodes: () -> (text);
+   checkPlayerAdded: () -> (bool) query;
+   getAllCodes: () -> (opt BetaPlayerNFTs) query;
+   getAllCodesAv: () -> (vec record {
+                               nat;
+                               NFTType;
+                             }) query;
+   getAllCodesNum: () -> (nat) query;
+   getAllUsers: () -> (vec record {
+                             BetaPlayerId;
+                             BetaPlayerData;
+                           }) query;
+   getBetaPlayer: () -> (opt BetaPlayerData) query;
+   whoAmI: () -> (principal) query;
+ };
+type NFTType__1 = 
+ record {
+   batch: nat;
+   code: NFTCode;
+   faction: text;
+   shipName: text;
+ };
+type NFTType = 
+ record {
+   batch: nat;
+   code: NFTCode;
+   faction: text;
+   shipName: text;
+ };
+type NFTCode = 
+ record {
+   code: text;
+   id: nat;
+ };
+type CodesList = vec NFTType__1;
+type BetaPlayerNFTs = 
+ record {
+   nftChar: NFTCode;
+   nftsCodes: vec NFTCode;
+ };
+type BetaPlayerId = principal;
+type BetaPlayerData = 
+ record {
+   faction: nat;
+   id: principal;
+   wallet: text;
+ };
+service : (principal) -> NFTsBeta

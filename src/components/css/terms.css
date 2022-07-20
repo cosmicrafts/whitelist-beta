@@ -1,0 +1,202 @@
+.terms-main-div{
+    height: 100%;
+    width: 100%;
+}
+.terms-div-panel{
+    height: 80vh;
+    --ratio: calc(2922 / 1719);
+    width: calc(80vh * var(--ratio));
+    position: absolute;
+    top: 12vh;
+    left: calc(10vh * var(--ratio));
+    background: url("../../resources/terms/frame_bkg_big.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.terms-img-icon{
+    width: 10vh;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+.terms-img-icon-ic{
+    width: 6vh;
+    position: absolute;
+    top: 5vh;
+    right: 2vw;
+}
+.terms-div-text-login{
+    position: absolute;
+    top: 10vh;
+    --ratio: calc(2922 / 1719);
+    width: calc(80vh * var(--ratio));
+    text-align: center;
+}
+.terms-long-text{
+    position: absolute;
+    top: 17vh;
+    left: calc(5vh * var(--ratio));
+    width: calc(70vh * var(--ratio));
+    height: 50vh;
+    overflow-y: scroll;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-size: 1.5vh;
+    text-align: justify;
+    padding-right: 10px;
+}
+.terms-header{
+    font-size: 2vh;
+    font-weight: 800;
+}
+.terms-div-airdrop{
+    position: absolute;
+    top: 76.5vh;
+    --ratio: calc(2922 / 1719);
+    width: calc(80vh * var(--ratio));
+    text-align: center;
+}
+.terms-btn-accept{
+    background-image: url("../../resources/design/box_unselected.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 16vh;
+    --ratio: calc(81 / 317);
+    height: calc(16vh * var(--ratio));
+    cursor: pointer;
+    right: 6vh;
+    bottom: 6vh;
+    position: absolute;
+    text-align: center;
+}
+.terms-btn-accept:hover{
+    background-image: url("../../resources/design/box_hover.svg");
+}
+.terms-btn-txt{
+    color: #FFFFFF;
+    font-size: 1.35vh;
+    font-family: 'Inter';
+    cursor: pointer;
+    vertical-align: sub;
+}
+
+@media(max-width: 767px){
+    .terms-div-panel{
+        width: 90vw;
+        --ratio: calc(1719 / 1076);
+        height: calc(90vw * var(--ratio));
+        position: absolute;
+        top: 12vh;
+        left: 5vw;
+        background: url("../../resources/terms/frame_bkg_small.png"); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .terms-img-icon{
+        width: 10vw;
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+    }
+    .terms-img-icon-ic{
+        width: 6vw;
+        position: absolute;
+        top: 4vh;
+        right: 3vw;
+    }
+    .terms-div-text-login{
+        position: absolute;
+        top: 6vh;
+        width: 70vw;
+        left: 10vw;
+        text-align: center;
+    }
+    .terms-long-text{
+        position: absolute;
+        top: 13vh;
+        left: 10vw;
+        width: 70vw;
+        height: 90vw;
+        overflow-y: scroll;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-size: 1.5vh;
+        text-align: justify;
+    }
+    .terms-header{
+        font-size: 2vh;
+        font-weight: 800;
+    }
+    .terms-div-airdrop{
+        position: absolute;
+        --ratio: calc(1719 / 1076);
+        top: calc(90vw * var(--ratio));
+        width: 90vw;
+        text-align: center;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+    .terms-div-panel{
+        width: 70vw;
+        --ratio: calc(1719 / 1076);
+        height: calc(70vw * var(--ratio));
+        position: absolute;
+        top: 12vh;
+        left: 15vw;
+        background: url("../../resources/terms/frame_bkg_small.png"); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .terms-img-icon{
+        width: 10vw;
+        position: absolute;
+        top: 2vh;
+        left: 2vw;
+    }
+    .terms-img-icon-ic{
+        width: 6vw;
+        position: absolute;
+        top: 4vh;
+        right: 3vw;
+    }
+    .terms-div-text-login{
+        position: absolute;
+        top: 6vh;
+        width: 45vw;
+        left: 12.5vw;
+        text-align: center;
+    }
+    .terms-long-text{
+        position: absolute;
+        top: 13vh;
+        left: 7vw;
+        width: 56vw;
+        height: 75vw;
+        overflow-y: scroll;
+        color: #FFFFFF;
+        font-family: 'Inter';
+        font-size: 1.5vh;
+        text-align: justify;
+    }
+    .terms-header{
+        font-size: 2vh;
+        font-weight: 800;
+    }
+    .terms-div-airdrop{
+        position: absolute;
+        --ratio: calc(1719 / 1076);
+        top: calc(90vw * var(--ratio));
+        width: 90vw;
+        text-align: center;
+    }
+}

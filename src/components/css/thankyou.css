@@ -1,0 +1,290 @@
+.txt-thankyou{
+    font-family: 'Inter';
+    font-size: 3.25vw;
+    font-weight: 800;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 18vh;
+    left: 5vw;
+    width: 45vw;
+    -webkit-text-stroke-width: 0.15vh;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+.img-thankyou{
+    background: url("../../resources/faction/thankyou_img.png");
+    background-size: contain;
+    width: 45vw;
+    --ratio: calc(1754 / 1754);
+    height: calc(45vw * var(--ratio));
+    position: absolute;
+    right: 5vw;
+    top: 20vh;
+}
+
+.txt-release{
+    font-family: 'Inter';
+    font-size: 1.75vw;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    top: 44vh;
+    left: 5vw;
+    width: 45vw;
+}
+.txt-stay{
+    font-family: 'Inter';
+    font-size: 1.75vw;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    top: 50vh;
+    left: 5vw;
+    width: 45vw;
+}
+.social-link{
+    position: absolute;
+    cursor: pointer;
+    --h: 2.25vw;
+    height: var(--h);
+    top: 65vh;
+}
+.dscvr{
+    background: url("../../resources/social/dscvr_icon.svg");
+    background-size: cover;
+    --ratio: calc(96 / 94);
+    width: calc(var(--h) * var(--ratio));
+    left: 10vw;
+}
+.distrik{
+    background: url("../../resources/social/distrik_icon.svg");
+    background-size: cover;
+    --ratio: calc(98 / 95);
+    width: calc(var(--h) * var(--ratio));
+    left: 15vw;
+}
+.twitter{
+    background: url("../../resources/social/twitter_icon.svg");
+    background-size: cover;
+    --ratio: calc(115 / 94);
+    width: calc(var(--h) * var(--ratio));
+    left: 20vw;
+}
+.discord{
+    background: url("../../resources/social/discord_icon.svg");
+    background-size: cover;
+    --ratio: calc(125 / 94);
+    width: calc(var(--h) * var(--ratio));
+    left: 25vw;
+}
+.instagram{
+    background: url("../../resources/social/instagram_icon.svg");
+    background-size: cover;
+    --ratio: calc(93 / 93);
+    width: calc(var(--h) * var(--ratio));
+    left: 30vw;
+}
+.facebook{
+    background: url("../../resources/social/facebook_icon.svg");
+    background-size: cover;
+    --ratio: calc(95 / 95);
+    width: calc(var(--h) * var(--ratio));
+    left: 35vw;
+}
+.youtube{
+    background: url("../../resources/social/youtube_icon.svg");
+    background-size: cover;
+    --ratio: calc(117 / 93);
+    width: calc(var(--h) * var(--ratio));
+    left: 40vw;
+}
+
+@media(max-width: 767px){
+    .txt-thankyou{
+        font-size: 7vw;
+        top: 14vh;
+        width: 90vw;
+    }
+    .img-thankyou{
+        background: url("../../resources/faction/thankyou_img.png");
+        background-size: contain;
+        width: 90vw;
+        --ratio: calc(1754 / 1754);
+        height: calc(90vw * var(--ratio));
+        position: absolute;
+        right: 5vw;
+        top: 50vh;
+    }
+    
+    .txt-release{
+        font-family: 'Inter';
+        font-size: 4vw;
+        color: #FFFFFF;
+        position: absolute;
+        text-align: center;
+        top: 30vh;
+        left: 5vw;
+        width: 90vw;
+    }
+    .txt-stay{
+        font-family: 'Inter';
+        font-size: 4vw;
+        color: #FFFFFF;
+        position: absolute;
+        text-align: center;
+        top: 37vh;
+        left: 5vw;
+        width: 90vw;
+    }
+    .social-link{
+        position: absolute;
+        cursor: pointer;
+        --h: 6vw;
+        height: var(--h);
+        top: 48vh;
+    }
+    .dscvr{
+        background: url("../../resources/social/dscvr_icon.svg");
+        background-size: cover;
+        --ratio: calc(96 / 94);
+        width: calc(var(--h) * var(--ratio));
+        left: 12vw;
+    }
+    .distrik{
+        background: url("../../resources/social/distrik_icon.svg");
+        background-size: cover;
+        --ratio: calc(98 / 95);
+        width: calc(var(--h) * var(--ratio));
+        left: 24vw;
+    }
+    .twitter{
+        background: url("../../resources/social/twitter_icon.svg");
+        background-size: cover;
+        --ratio: calc(115 / 94);
+        width: calc(var(--h) * var(--ratio));
+        left: 36vw;
+    }
+    .discord{
+        background: url("../../resources/social/discord_icon.svg");
+        background-size: cover;
+        --ratio: calc(125 / 94);
+        width: calc(var(--h) * var(--ratio));
+        left: 48vw;
+    }
+    .instagram{
+        background: url("../../resources/social/instagram_icon.svg");
+        background-size: cover;
+        --ratio: calc(93 / 93);
+        width: calc(var(--h) * var(--ratio));
+        left: 60vw;
+    }
+    .facebook{
+        background: url("../../resources/social/facebook_icon.svg");
+        background-size: cover;
+        --ratio: calc(95 / 95);
+        width: calc(var(--h) * var(--ratio));
+        left: 72vw;
+    }
+    .youtube{
+        background: url("../../resources/social/youtube_icon.svg");
+        background-size: cover;
+        --ratio: calc(117 / 93);
+        width: calc(var(--h) * var(--ratio));
+        left: 84vw;
+    }
+}
+
+@media(min-width:768px) and (max-width: 1023px){
+    .txt-thankyou{
+        font-size: 7vw;
+        top: 10vh;
+        width: 90vw;
+    }
+    .img-thankyou{
+        background: url("../../resources/faction/thankyou_img.png");
+        background-size: contain;
+        width: 80vw;
+        --ratio: calc(1754 / 1754);
+        height: calc(80vw * var(--ratio));
+        position: absolute;
+        right: 10vw;
+        top: 40vh;
+    }
+    
+    .txt-release{
+        font-family: 'Inter';
+        font-size: 4vw;
+        color: #FFFFFF;
+        position: absolute;
+        text-align: center;
+        top: 24vh;
+        left: 5vw;
+        width: 90vw;
+    }
+    .txt-stay{
+        font-family: 'Inter';
+        font-size: 4vw;
+        color: #FFFFFF;
+        position: absolute;
+        text-align: center;
+        top: 30vh;
+        left: 5vw;
+        width: 90vw;
+    }
+    .social-link{
+        position: absolute;
+        cursor: pointer;
+        --h: 5vw;
+        height: var(--h);
+        top: 40vh;
+    }
+    .dscvr{
+        background: url("../../resources/social/dscvr_icon.svg");
+        background-size: cover;
+        --ratio: calc(96 / 94);
+        width: calc(var(--h) * var(--ratio));
+        left: 12vw;
+    }
+    .distrik{
+        background: url("../../resources/social/distrik_icon.svg");
+        background-size: cover;
+        --ratio: calc(98 / 95);
+        width: calc(var(--h) * var(--ratio));
+        left: 24vw;
+    }
+    .twitter{
+        background: url("../../resources/social/twitter_icon.svg");
+        background-size: cover;
+        --ratio: calc(115 / 94);
+        width: calc(var(--h) * var(--ratio));
+        left: 36vw;
+    }
+    .discord{
+        background: url("../../resources/social/discord_icon.svg");
+        background-size: cover;
+        --ratio: calc(125 / 94);
+        width: calc(var(--h) * var(--ratio));
+        left: 48vw;
+    }
+    .instagram{
+        background: url("../../resources/social/instagram_icon.svg");
+        background-size: cover;
+        --ratio: calc(93 / 93);
+        width: calc(var(--h) * var(--ratio));
+        left: 60vw;
+    }
+    .facebook{
+        background: url("../../resources/social/facebook_icon.svg");
+        background-size: cover;
+        --ratio: calc(95 / 95);
+        width: calc(var(--h) * var(--ratio));
+        left: 72vw;
+    }
+    .youtube{
+        background: url("../../resources/social/youtube_icon.svg");
+        background-size: cover;
+        --ratio: calc(117 / 93);
+        width: calc(var(--h) * var(--ratio));
+        left: 84vw;
+    }
+}
