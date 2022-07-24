@@ -150,7 +150,6 @@ const Login = (props) => {
       if(_saved === true){
         setStep("done");
       } else {
-        alert("Already registered");
         setStep("done");
       }
     };
@@ -345,7 +344,7 @@ const Login = (props) => {
               <div>
                 <label className='txt-thankyou'>Thanks for registering to<br/>the Cosmicrafts Beta!</label>
                 <div className='img-thankyou'></div>
-                <label className='txt-release'>The release is set for July 2022</label>
+                <label className='txt-release'>The release is set for August 2022</label>
                 <label className='txt-stay'>Stay tunned to our social networks to know the exact day and time of the closed beta release</label>
                 <a href="https://h5aet-waaaa-aaaab-qaamq-cai.raw.ic0.app/u/Cosmicrafts" target="_blank"><div className='social-link dscvr'></div></a>
                 <a href="https://az5sd-cqaaa-aaaae-aaarq-cai.ic0.app/u/Cosmicrafts" target="_blank"><div className='social-link distrik'></div></a>
