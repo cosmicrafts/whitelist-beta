@@ -8,7 +8,7 @@ import { Login } from './components/login/Login';
 
 var hist = createBrowserHistory();
 
-document.title = "Cosmicrafts Airdrop";
+document.title = "Cosmicrafts Beta Register";
 
 render(
   <AppProvider>
